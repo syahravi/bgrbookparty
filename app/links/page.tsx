@@ -10,28 +10,28 @@ export default function LinksPage() {
   const links = [
     {
       platform: 'Instagram',
-      url: 'https://instagram.com/bogorbookparty',
+      url: 'https://instagram.com/bgrbookparty',
       icon: Instagram,
       color: 'from-purple-500 to-pink-500',
       description: 'Follow kami untuk update terbaru!',
     },
     {
       platform: 'WhatsApp Group',
-      url: 'https://wa.me/628123456789',
+      url: 'https://wa.me/6285183370979',
       icon: MessageCircle,
       color: 'from-green-500 to-emerald-500',
       description: 'Join grup WhatsApp komunitas',
     },
     {
       platform: 'TikTok',
-      url: 'https://tiktok.com/@bogorbookparty',
+      url: 'https://tiktok.com/@bgrbookparty',
       icon: Music,
       color: 'from-black to-gray-700',
       description: 'Konten seru tentang buku',
     },
     {
       platform: 'Goodreads',
-      url: 'https://goodreads.com/bogorbookparty',
+      url: 'https://goodreads.com/bgrbookparty',
       icon: Book,
       color: 'from-amber-600 to-orange-600',
       description: 'Lihat reading list kami',
@@ -105,7 +105,7 @@ export default function LinksPage() {
           </div>
 
           {/* CTA */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -120,7 +120,7 @@ export default function LinksPage() {
             >
               Kunjungi Website Kami
             </a>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 
