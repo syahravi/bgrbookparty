@@ -2,8 +2,9 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Menu, X, Book } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Logo from './Logo';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,13 +23,8 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <div className="bg-primary p-2 rounded-full group-hover:bg-primary-600 transition-colors">
-              <Book className="w-6 h-6 text-accent" />
-            </div>
-            <span className="text-xl font-display font-bold text-accent">
-              Bogor Book Party
-            </span>
+          <Link href="/" className="flex items-center group">
+            <Logo className="h-12 w-48 md:h-14 md:w-56" />
           </Link>
 
           {/* Desktop Navigation */}

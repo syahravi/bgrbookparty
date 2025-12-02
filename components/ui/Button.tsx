@@ -12,10 +12,10 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     const baseStyles = 'inline-flex items-center justify-center rounded-full font-medium transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed';
 
     const variants = {
-      primary: 'bg-primary hover:bg-primary-600 text-accent shadow-sm hover:shadow-md',
-      secondary: 'bg-secondary hover:bg-secondary-dark text-accent',
-      outline: 'border-2 border-primary text-accent hover:bg-primary hover:text-white',
-      ghost: 'text-accent hover:bg-primary-100',
+      primary: 'bg-accent hover:bg-accent-light text-white shadow-md hover:shadow-lg font-semibold',
+      secondary: 'bg-primary hover:bg-primary-600 text-accent font-semibold shadow-sm',
+      outline: 'border-2 border-accent text-accent hover:bg-accent hover:text-white font-semibold',
+      ghost: 'text-accent hover:bg-primary-100 font-medium',
     };
 
     const sizes = {

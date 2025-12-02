@@ -163,7 +163,7 @@ export default function EventsPage() {
 
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button
-                      className="flex-1 sm:flex-none"
+                      className="bg-white text-accent hover:bg-accent hover:text-white shadow-lg flex-1 sm:flex-none"
                       disabled={event.currentParticipants >= event.maxParticipants}
                     >
                       {event.currentParticipants >= event.maxParticipants

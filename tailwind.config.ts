@@ -30,8 +30,15 @@ const config: Config = {
         accent: {
           DEFAULT: "#053923",
           light: "#3F6E53",
+          lighter: "#6FB589",
         },
         background: "#F5FBF8",
+        text: {
+          primary: "#053923",
+          secondary: "#3F6E53",
+          muted: "#6B7280",
+          light: "#9CA3AF",
+        },
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],

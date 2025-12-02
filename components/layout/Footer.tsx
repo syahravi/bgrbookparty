@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Book, Instagram, MessageCircle, Music } from 'lucide-react';
+import { Instagram, MessageCircle, Music } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,14 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="bg-primary p-2 rounded-full">
-                <Book className="w-6 h-6 text-accent" />
-              </div>
-              <span className="text-xl font-display font-bold">
-                Bogor Book Party
-              </span>
-            </div>
+            <Logo variant="white" className="h-16 w-48 mb-2" />
             <p className="text-sm text-gray-300">
               Komunitas pecinta buku di Bogor. Bergabunglah untuk berbagi kecintaan pada literasi!
             </p>

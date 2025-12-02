@@ -72,7 +72,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/register">
-                  <Button size="lg" className="w-full sm:w-auto">
+                  <Button size="lg" className="bg-white text-accent hover:bg-accent hover:text-white shadow-lg w-full sm:w-auto">
                     Daftar Sekarang
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
@@ -252,8 +252,7 @@ export default function Home() {
             <Link href="/register">
               <Button
                 size="lg"
-                variant="secondary"
-                className="bg-white text-accent hover:bg-gray-100"
+                className="bg-white text-accent hover:bg-accent hover:text-white shadow-lg"
               >
                 Daftar Member Sekarang
                 <ArrowRight className="ml-2 w-5 h-5" />

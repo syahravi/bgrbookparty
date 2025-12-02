@@ -24,11 +24,13 @@ Website komunitas pecinta buku di Bogor yang dibangun dengan Next.js 16, TypeScr
   - Member List
 
 ### Design & UX
-- 🎨 Tema warna pastel hijau (#A8D5BA, #D4EBE0, #053923)
+- 🎨 Color system optimized untuk readability (WCAG AAA compliant)
+- 🌿 Tema hijau pastel sesuai logo BBP (#053923)
 - ⚡ Animasi smooth dengan Framer Motion
 - 📱 Responsive design (mobile-first)
 - 🎯 Custom scrollbar dan smooth scroll
 - ✨ Toast notifications
+- 📖 Typography yang readable (Inter + Playfair Display)
 
 ## 🛠 Tech Stack
 
@@ -69,7 +71,14 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
 
 Buka Supabase Dashboard → SQL Editor, lalu jalankan script di `lib/supabase-schema.sql`
 
-5. **Run development server**
+5. **Add Logo (Optional)**
+
+Logo component sudah terintegrasi dengan fallback otomatis. Untuk menambahkan logo BBP:
+- Export logo dalam 2 versi: `logo.png` (hijau) dan `logo-white.png` (putih)
+- Simpan ke folder `public/`
+- Lihat panduan lengkap di [HOW_TO_ADD_LOGO.md](HOW_TO_ADD_LOGO.md)
+
+6. **Run development server**
 ```bash
 npm run dev
 ```
