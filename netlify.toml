@@ -1,19 +1,5 @@
 # Netlify Configuration for Next.js 16 + Baserow
 # Documentation: https://docs.netlify.com/configure-builds/file-based-configuration/
-
-# ============================================================================
-# BUILD SETTINGS
-# ============================================================================
-[build]
-  # Build command untuk Next.js production
-  command = "npm run build"
-
-  # Publish directory (Next.js output)
-  publish = ".next"
-
-    # Next.js telemetry (optional)
-    NEXT_TELEMETRY_DISABLED = "1"
-
 # ============================================================================
 # NEXT.JS PLUGIN - REQUIRED!
 # ============================================================================
