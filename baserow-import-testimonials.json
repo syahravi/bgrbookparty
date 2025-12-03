@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sarah Wijaya",
+    "text": "Bergabung dengan Bogor Book Party adalah keputusan terbaik! Saya menemukan teman-teman yang sama-sama passionate tentang buku.",
+    "role": "Member sejak 2023",
+    "rating": 5,
+    "is_active": true,
+    "order": 1
+  },
+  {
+    "name": "Budi Santoso",
+    "text": "Event-eventnya selalu menarik dan well-organized. Diskusinya berkualitas dan membuka wawasan baru.",
+    "role": "Member sejak 2024",
+    "rating": 5,
+    "is_active": true,
+    "order": 2
+  },
+  {
+    "name": "Rina Kartika",
+    "text": "Komunitas yang hangat dan supportive. Recommended untuk semua book lovers di Bogor!",
+    "role": "Member sejak 2024",
+    "rating": 5,
+    "is_active": true,
+    "order": 3
+  }
+]

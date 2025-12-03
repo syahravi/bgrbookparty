@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "Users",
+    "label": "Active Members",
+    "value": "150+",
+    "order": 1
+  },
+  {
+    "icon": "Calendar",
+    "label": "Events Held",
+    "value": "24+",
+    "order": 2
+  },
+  {
+    "icon": "BookOpen",
+    "label": "Books Reviewed",
+    "value": "300+",
+    "order": 3
+  },
+  {
+    "icon": "Star",
+    "label": "Average Rating",
+    "value": "4.8",
+    "order": 4
+  }
+]

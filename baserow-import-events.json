@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Book Discussion: Sapiens",
+    "date": "15 Desember 2025",
+    "location": "Kopi Tuku Bogor",
+    "description": "Diskusi mendalam tentang buku Sapiens karya Yuval Noah Harari",
+    "status": "upcoming",
+    "order": 1
+  },
+  {
+    "title": "Poetry Reading Night",
+    "date": "22 Desember 2025",
+    "location": "Perpustakaan Bogor",
+    "description": "Malam apresiasi puisi dan sastra Indonesia",
+    "status": "upcoming",
+    "order": 2
+  }
+]

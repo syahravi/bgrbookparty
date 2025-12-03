@@ -1,6 +1,6 @@
 # 📚 Bogor Book Party Website
 
-Website komunitas pecinta buku di Bogor yang dibangun dengan Next.js 16, TypeScript, Tailwind CSS, dan Supabase.
+Website komunitas pecinta buku di Bogor yang dibangun dengan Next.js 16, TypeScript, Tailwind CSS, dan Baserow.
 
 ## 🎨 Features
 
@@ -37,7 +37,7 @@ Website komunitas pecinta buku di Bogor yang dibangun dengan Next.js 16, TypeScr
 - **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS 4
-- **Database**: Supabase (PostgreSQL)
+- **Database**: Baserow (No-code Database)
 - **Form Validation**: React Hook Form + Zod
 - **Animations**: Framer Motion
 - **Icons**: Lucide React
@@ -58,18 +58,24 @@ npm install
 
 3. **Setup environment variables**
 ```bash
-cp .env.local.example .env.local
+cp .env.example .env.local
 ```
 
-Edit `.env.local` dan isi dengan credentials Supabase Anda:
+Edit `.env.local` dan isi dengan credentials Baserow Anda:
 ```env
-NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+BASEROW_API_TOKEN=your_baserow_api_token
+NEXT_PUBLIC_BASEROW_API_URL=https://api.baserow.io
+NEXT_PUBLIC_BASEROW_STATS_TABLE_ID=your_stats_table_id
+NEXT_PUBLIC_BASEROW_EVENTS_TABLE_ID=your_events_table_id
+NEXT_PUBLIC_BASEROW_TESTIMONIALS_TABLE_ID=your_testimonials_table_id
 ```
 
-4. **Setup Supabase Database**
+4. **Setup Baserow Database**
 
-Buka Supabase Dashboard → SQL Editor, lalu jalankan script di `lib/supabase-schema.sql`
+Lihat panduan lengkap di [BASEROW_STRUCTURE.md](BASEROW_STRUCTURE.md):
+- Import 3 file JSON ke Baserow
+- Dapatkan API Token dan Table IDs
+- Isi environment variables
 
 5. **Add Logo (Optional)**
 
@@ -87,15 +93,12 @@ Buka [http://localhost:3000](http://localhost:3000)
 
 ## 🗄 Database Schema
 
-### Tables
-- `site_content` - Konten statis (hero, about, stats)
-- `events` - Jadwal event komunitas
-- `books` - Katalog buku rekomendasi
-- `social_links` - Link bio untuk social media
-- `members` - Data pendaftar member
-- `admins` - User admin
+### Baserow Tables
+- `homepage_stats` - Statistik homepage (active members, events held, etc)
+- `upcoming_events` - Event komunitas
+- `testimonials` - Testimoni member
 
-Lihat detail schema di `lib/supabase-schema.sql`
+Lihat detail struktur dan cara import di [BASEROW_STRUCTURE.md](BASEROW_STRUCTURE.md)
 
 ## 🔐 Admin Access
 
@@ -125,10 +128,11 @@ next/
 │   ├── layout/                 # Header, Footer
 │   └── ui/                     # Button, Input, Textarea
 ├── lib/
-│   ├── supabase.ts            # Supabase client
-│   ├── database.types.ts      # TypeScript types
+│   ├── baserow.ts             # Baserow API client
 │   ├── auth.ts                # Auth utilities
 │   └── utils.ts               # Helper functions
+├── types/
+│   └── baserow.ts             # TypeScript types
 └── public/                     # Static assets
 ```
 
@@ -197,7 +201,9 @@ npm run lint
 
 ## 📝 TODO / Future Enhancements
 
-- [ ] Integrasi Supabase real-time untuk live data
+- [ ] Books catalog dengan Baserow
+- [ ] Member registration dengan Baserow
+- [ ] Admin dashboard untuk manage Baserow data
 - [ ] Image upload untuk book covers dan gallery
 - [ ] Email notifications untuk member baru
 - [ ] Export member data ke CSV/Excel
