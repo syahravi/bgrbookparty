@@ -1,0 +1,190 @@
+# Netlify Configuration for Next.js 16 + Baserow
+# Documentation: https://docs.netlify.com/configure-builds/file-based-configuration/
+
+# ============================================================================
+# BUILD SETTINGS
+# ============================================================================
+[build]
+  # Build command untuk Next.js production
+  command = "npm run build"
+
+  # Publish directory (Next.js output)
+  publish = ".next"
+
+  # Environment variables untuk build
+  [build.environment]
+    # Node.js version (LTS)
+    NODE_VERSION = "20"
+
+    # Next.js telemetry (optional)
+    NEXT_TELEMETRY_DISABLED = "1"
+
+# ============================================================================
+# NEXT.JS PLUGIN - REQUIRED!
+# ============================================================================
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# ============================================================================
+# SERVERLESS FUNCTIONS CONFIGURATION
+# ============================================================================
+[functions]
+  # Use esbuild for faster bundling
+  node_bundler = "esbuild"
+
+  # Function timeout (26 detik untuk Baserow API calls)
+  # Free tier: max 10s, Pro tier: max 26s
+  function_timeout = 26
+
+  # Directory for custom functions (if needed)
+  directory = "netlify/functions"
+
+# ============================================================================
+# SECURITY HEADERS
+# ============================================================================
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Prevent clickjacking
+    X-Frame-Options = "DENY"
+
+    # Prevent MIME type sniffing
+    X-Content-Type-Options = "nosniff"
+
+    # Enable XSS protection
+    X-XSS-Protection = "1; mode=block"
+
+    # Referrer policy
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Permissions policy
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+    # Content Security Policy - IMPORTANT untuk Baserow!
+    Content-Security-Policy = """
+      default-src 'self';
+      script-src 'self' 'unsafe-eval' 'unsafe-inline';
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      font-src 'self' https://fonts.gstatic.com;
+      img-src 'self' data: https: blob:;
+      connect-src 'self' https://api.baserow.io https://*.baserow.io;
+      frame-ancestors 'none';
+      base-uri 'self';
+      form-action 'self';
+    """
+
+# ============================================================================
+# CACHE HEADERS - PERFORMANCE OPTIMIZATION
+# ============================================================================
+
+# Cache static assets (images, fonts, etc)
+[[headers]]
+  for = "/public/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache Next.js static files
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Cache images
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ============================================================================
+# REDIRECTS (optional - add your custom redirects here)
+# ============================================================================
+
+# Example: Redirect old URLs
+# [[redirects]]
+#   from = "/old-page"
+#   to = "/new-page"
+#   status = 301
+
+# Example: Redirect www to non-www
+# [[redirects]]
+#   from = "https://www.yourdomain.com/*"
+#   to = "https://yourdomain.com/:splat"
+#   status = 301
+#   force = true
+
+# Example: SPA fallback (if needed for admin routes)
+# [[redirects]]
+#   from = "/admin/*"
+#   to = "/admin/index.html"
+#   status = 200
+
+# ============================================================================
+# BUILD CONTEXT - DIFFERENT SETTINGS PER ENVIRONMENT
+# ============================================================================
+
+# Production environment
+[context.production]
+  command = "npm run build"
+
+  [context.production.environment]
+    NODE_ENV = "production"
+    NEXT_TELEMETRY_DISABLED = "1"
+
+# Deploy preview (PR/branch deploys)
+[context.deploy-preview]
+  command = "npm run build"
+
+  [context.deploy-preview.environment]
+    NODE_ENV = "production"
+
+# Branch deploys
+[context.branch-deploy]
+  command = "npm run build"
+
+# Development context (optional - for local Netlify Dev)
+[context.dev]
+  command = "npm run dev"
+
+  [context.dev.environment]
+    NODE_ENV = "development"
+
+# ============================================================================
+# EDGE FUNCTIONS (optional - if you need edge processing)
+# ============================================================================
+# [[edge_functions]]
+#   path = "/api/*"
+#   function = "api-handler"
+
+# ============================================================================
+# NOTES
+# ============================================================================
+#
+# Environment Variables Required (Set in Netlify UI):
+# - BASEROW_API_TOKEN (Secret)
+# - NEXT_PUBLIC_BASEROW_API_URL
+# - NEXT_PUBLIC_BASEROW_STATS_TABLE_ID
+# - NEXT_PUBLIC_BASEROW_EVENTS_TABLE_ID
+# - NEXT_PUBLIC_BASEROW_TESTIMONIALS_TABLE_ID
+#
+# To deploy:
+# 1. npm install -D @netlify/plugin-nextjs
+# 2. git add netlify.toml
+# 3. git commit -m "Add Netlify configuration"
+# 4. git push
+# 5. Set environment variables in Netlify UI
+# 6. Deploy!
