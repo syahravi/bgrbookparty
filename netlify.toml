@@ -11,11 +11,6 @@
   # Publish directory (Next.js output)
   publish = ".next"
 
-  # Environment variables untuk build
-  [build.environment]
-    # Node.js version (LTS)
-    NODE_VERSION = "20"
-
     # Next.js telemetry (optional)
     NEXT_TELEMETRY_DISABLED = "1"
 
