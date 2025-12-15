@@ -287,10 +287,10 @@ const ScheduleSection = () => {
   const schedule = [
     {
       day: "Minggu",
-      time: "08:00 - 11:00",
+      time: "10:00 - 14:10",
       event: "Bogor Book Party Weekly",
       location: "Taman Heulang, Bogor",
-      description: "Silent reading + sharing session",
+      description: "Meet Mates, Reading Chill, Sharing Session, Break Ishoma, Surprise Activity, Closing",
       isHighlight: true,
     },
     {
@@ -385,7 +385,7 @@ const ScheduleSection = () => {
                 <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
                   <p className="text-sm text-white/70 mb-2">Kegiatan Berikutnya</p>
                   <p className="text-3xl font-bold mb-1">Minggu</p>
-                  <p className="text-lg">08:00 WIB</p>
+                  <p className="text-lg">10:00 WIB</p>
                   <p className="text-white/80 mt-2">📍 Taman Heulang</p>
                 </div>
               </div>

@@ -11,16 +11,17 @@ export default function JadwalPage() {
         {
             id: 1,
             day: "Minggu",
-            time: "08:00 - 11:00 WIB",
+            time: "10:00 - 14:10 WIB",
             event: "Bogor Book Party Weekly",
             location: "Taman Heulang, Bogor",
             isHighlight: true,
             activities: [
-                { time: "08:00 - 08:15", activity: "Registrasi & Welcome" },
-                { time: "08:15 - 09:00", activity: "Silent Reading" },
-                { time: "09:00 - 09:45", activity: "Sharing Session" },
-                { time: "09:45 - 10:30", activity: "Surprise Activity" },
-                { time: "10:30 - 11:00", activity: "Free time & Networking" },
+                { time: "10:00 - 10:15", activity: "Meet Mates" },
+                { time: "10:15 - 10:45", activity: "Reading Chill" },
+                { time: "10:45 - 12:15", activity: "Sharing Session" },
+                { time: "12:15 - 12:45", activity: "Break Ishoma" },
+                { time: "12:45 - 14:00", activity: "Surprise Activity" },
+                { time: "14:00 - 14:10", activity: "Closing & Foto Bersama" },
             ],
         },
         {
