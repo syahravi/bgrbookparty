@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Bergabung - Bogor Book Party | Jadi Bagian dari Komunitas Literasi Bogor",
-    description: "Bergabunglah dengan Bogor Book Party! Nikmati kegiatan membaca bersama setiap Minggu di Taman Sempur.",
+    description: "Bergabunglah dengan Bogor Book Party! Nikmati kegiatan membaca bersama setiap Minggu di Taman Heulang.",
 };
 
 export default function BergabungPage() {
@@ -18,7 +18,7 @@ export default function BergabungPage() {
 
     const steps = [
         { step: "1", title: "Siapkan Buku", desc: "Pilih buku yang ingin kamu baca. Genre apapun dipersilakan!" },
-        { step: "2", title: "Datang ke Lokasi", desc: "Hadir di Taman Sempur setiap Minggu pukul 08:00 WIB" },
+        { step: "2", title: "Datang ke Lokasi", desc: "Hadir di Taman Heulang setiap Minggu pukul 08:00 WIB" },
         { step: "3", title: "Ikuti Kegiatan", desc: "Silent reading, sharing session, dan surprise activity menunggumu" },
         { step: "4", title: "Join Grup WA", desc: "Bergabung di grup WhatsApp untuk info kegiatan terbaru" },
     ];

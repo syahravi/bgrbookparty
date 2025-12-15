@@ -14,7 +14,7 @@ const programs = [
         subtitle: "Kegiatan Utama",
         schedule: "Setiap Minggu",
         time: "08:00 - 11:00 WIB",
-        location: "Taman Sempur & tempat publik lainnya",
+        location: "Taman Heulang & tempat publik lainnya",
         description: "BBP Weekly adalah kegiatan inti dari Bogor Book Party. Setiap Minggu pagi, kami berkumpul di ruang publik untuk membaca bersama (silent reading) selama 30-45 menit, dilanjutkan dengan sharing session di mana peserta berbagi tentang buku yang sedang dibaca, dan diakhiri dengan surprise activity yang seru dan interaktif.",
         activities: [
             "Silent reading selama 30-45 menit",

@@ -31,7 +31,7 @@ export default function KontakPage() {
     ];
 
     const locations = [
-        { name: "Taman Sempur", address: "Jl. Sempur, Kec. Bogor Tengah, Kota Bogor", event: "BBP Weekly (Minggu)" },
+        { name: "Taman Heulang", address: "Jl. Heulang, RT.06/RW.04, Tanah Sareal, Kec. Tanah Sereal, Kota Bogor", event: "BBP Weekly (Minggu)" },
         { name: "Perpustakaan Kota Bogor", address: "Jl. Merdeka No.120, Cibogor, Kec. Bogor Tengah", event: "PUSRENG (Rabu)" },
     ];
 

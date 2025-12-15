@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Jadwal Kegiatan - Bogor Book Party | Literasi Bogor",
-    description: "Jadwal kegiatan mingguan Bogor Book Party. Silent reading setiap Minggu di Taman Sempur.",
+    description: "Jadwal kegiatan mingguan Bogor Book Party. Silent reading setiap Minggu di Taman Heulang.",
 };
 
 export default function JadwalPage() {
@@ -13,7 +13,7 @@ export default function JadwalPage() {
             day: "Minggu",
             time: "08:00 - 11:00 WIB",
             event: "Bogor Book Party Weekly",
-            location: "Taman Sempur, Bogor",
+            location: "Taman Heulang, Bogor",
             isHighlight: true,
             activities: [
                 { time: "08:00 - 08:15", activity: "Registrasi & Welcome" },

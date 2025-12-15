@@ -231,7 +231,7 @@ const HistorySection = () => {
                             </p>
                             <p className="text-lg leading-relaxed">
                                 Sejak tahun 2019, kami konsisten mengadakan kegiatan membaca bersama setiap Minggu
-                                di ruang publik, dimulai dari Taman Sempur. Kini, gerakan ini telah berkembang
+                                di ruang publik, dimulai dari Taman Heulang. Kini, gerakan ini telah berkembang
                                 dengan berbagai program dan telah berkolaborasi dengan lebih dari 20 institusi.
                             </p>
                             <p className="text-lg leading-relaxed">

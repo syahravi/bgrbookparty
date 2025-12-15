@@ -11,7 +11,7 @@
 #### B. Program-Program Utama
 1. **Bogor Book Party (Weekly)**
    - Jadwal: Setiap Minggu
-   - Lokasi utama: Taman Sempur/tempat publik
+   - Lokasi utama: Taman Heulang/tempat publik
    - Kegiatan: Silent reading + sharing session + surprise activity
    
 2. **Booktalk Party**
@@ -155,7 +155,7 @@ Blog/Artikel
 ### 7. **SEO & Meta Tags**
 
 - Title: "Bogor Book Party - Komunitas Literasi Bogor | Membaca Bersama Setiap Minggu"
-- Description: "Bergabunglah dengan komunitas literasi terbesar di Bogor. Silent reading, diskusi buku, dan kegiatan seru setiap Minggu di Taman Sempur."
+- Description: "Bergabunglah dengan komunitas literasi terbesar di Bogor. Silent reading, diskusi buku, dan kegiatan seru setiap Minggu di Taman Heulang."
 - Keywords: bogor book party, komunitas baca bogor, literasi bogor, perpustakaan bogor, diskusi buku
 
 ### 8. **Konten Khusus yang Perlu Ditambahkan**
@@ -244,7 +244,7 @@ Mengingat banyaknya kolaborasi (20+ mitra), buat halaman khusus:
 - [ ] Jadwal rutin (Minggu & Rabu)
 - [ ] Kontak: 2 WhatsApp + Email
 - [ ] Link Instagram @bgrbookparty
-- [ ] Lokasi kegiatan (Taman Sempur, dll)
+- [ ] Lokasi kegiatan (Taman Heulang, dll)
 - [ ] Data statistik (4.329K followers, 178 kegiatan, dll)
 - [ ] Quote PJ Fatimah
 - [ ] Penjelasan surprise activity

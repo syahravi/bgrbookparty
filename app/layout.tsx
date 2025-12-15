@@ -19,8 +19,8 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Bogor Book Party - Komunitas Literasi Bogor | Membaca Bersama Setiap Minggu",
-  description: "Bergabunglah dengan komunitas literasi terbesar di Bogor. Silent reading, diskusi buku, dan kegiatan seru setiap Minggu di Taman Sempur. Kami hadir bukan sekadar sebagai teman baca, tapi untuk merawat rasa, menghidupkan literasi di Kota Bogor.",
-  keywords: "bogor book party, komunitas baca bogor, literasi bogor, perpustakaan bogor, diskusi buku, silent reading, taman sempur",
+  description: "Bergabunglah dengan komunitas literasi terbesar di Bogor. Silent reading, diskusi buku, dan kegiatan seru setiap Minggu di Taman Heulang. Kami hadir bukan sekadar sebagai teman baca, tapi untuk merawat rasa, menghidupkan literasi di Kota Bogor.",
+  keywords: "bogor book party, komunitas baca bogor, literasi bogor, perpustakaan bogor, diskusi buku, silent reading, Taman Heulang",
   openGraph: {
     title: "Bogor Book Party - Komunitas Literasi Bogor",
     description: "Bergabunglah dengan komunitas literasi terbesar di Bogor. Silent reading, diskusi buku, dan kegiatan seru setiap Minggu.",

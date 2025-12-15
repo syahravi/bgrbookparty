@@ -172,7 +172,7 @@ const ProgramsSection = () => {
       icon: "📖",
       title: "Bogor Book Party Weekly",
       schedule: "Setiap Minggu",
-      location: "Taman Sempur & tempat publik",
+      location: "Taman Heulang & tempat publik",
       description: "Silent reading bersama diikuti dengan sharing session dan surprise activity yang seru.",
       color: "from-[#1B5E3F] to-[#2E7D5A]",
     },
@@ -289,7 +289,7 @@ const ScheduleSection = () => {
       day: "Minggu",
       time: "08:00 - 11:00",
       event: "Bogor Book Party Weekly",
-      location: "Taman Sempur, Bogor",
+      location: "Taman Heulang, Bogor",
       description: "Silent reading + sharing session",
       isHighlight: true,
     },
@@ -327,16 +327,16 @@ const ScheduleSection = () => {
                 <div
                   key={index}
                   className={`p-6 rounded-2xl border-2 transition-all duration-300 hover:shadow-lg ${item.isHighlight
-                      ? "border-[#1B5E3F] bg-[#1B5E3F]/5"
-                      : "border-gray-200 hover:border-[#1B5E3F]/30"
+                    ? "border-[#1B5E3F] bg-[#1B5E3F]/5"
+                    : "border-gray-200 hover:border-[#1B5E3F]/30"
                     }`}
                 >
                   <div className="flex items-start justify-between flex-wrap gap-4">
                     <div>
                       <div className="flex items-center gap-3 mb-2">
                         <span className={`px-3 py-1 rounded-full text-sm font-semibold ${item.isHighlight
-                            ? "bg-[#1B5E3F] text-white"
-                            : "bg-gray-200 text-gray-700"
+                          ? "bg-[#1B5E3F] text-white"
+                          : "bg-gray-200 text-gray-700"
                           }`}>
                           {item.day}
                         </span>
@@ -380,13 +380,13 @@ const ScheduleSection = () => {
                 <div className="text-6xl mb-6">📅</div>
                 <h3 className="text-2xl font-bold mb-4">Gabung Minggu Ini!</h3>
                 <p className="text-white/80 mb-6">
-                  Kami menunggu kehadiranmu setiap Minggu pagi di Taman Sempur.
+                  Kami menunggu kehadiranmu setiap Minggu pagi di Taman Heulang.
                 </p>
                 <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
                   <p className="text-sm text-white/70 mb-2">Kegiatan Berikutnya</p>
                   <p className="text-3xl font-bold mb-1">Minggu</p>
                   <p className="text-lg">08:00 WIB</p>
-                  <p className="text-white/80 mt-2">📍 Taman Sempur</p>
+                  <p className="text-white/80 mt-2">📍 Taman Heulang</p>
                 </div>
               </div>
             </div>
