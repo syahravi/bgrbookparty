@@ -10,7 +10,7 @@ export default function KontakPage() {
         {
             icon: "📱",
             title: "Minbuk BBP",
-            value: "+62 831-5961-1776",
+            value: "+62 851-1104-0891",
             link: "https://wa.me/6285111040891",
             type: "WhatsApp",
         },
