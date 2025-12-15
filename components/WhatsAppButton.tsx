@@ -10,8 +10,8 @@ const WhatsAppButton = () => {
             {/* Tooltip */}
             <div
                 className={`bg-white rounded-xl shadow-xl px-4 py-3 transition-all duration-300 ${isHovered
-                        ? "opacity-100 translate-x-0"
-                        : "opacity-0 translate-x-4 pointer-events-none"
+                    ? "opacity-100 translate-x-0"
+                    : "opacity-0 translate-x-4 pointer-events-none"
                     }`}
             >
                 <p className="text-sm font-medium text-gray-800 whitespace-nowrap">
@@ -24,7 +24,7 @@ const WhatsAppButton = () => {
 
             {/* WhatsApp Button */}
             <a
-                href="https://wa.me/6281326360219?text=Halo%20Bogor%20Book%20Party!%20Saya%20ingin%20bertanya%20tentang%20kegiatan%20BBP."
+                href="https://wa.me/6285111040891?text=Halo%20Bogor%20Book%20Party!%20Saya%20ingin%20bertanya%20tentang%20kegiatan%20BBP."
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={() => setIsHovered(true)}

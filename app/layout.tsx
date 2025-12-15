@@ -40,9 +40,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className="scroll-smooth">
+    <html lang="id" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={`${outfit.variable} ${playfair.variable} antialiased font-[family-name:var(--font-outfit)]`}
+        suppressHydrationWarning
       >
         <Navbar />
         {children}
