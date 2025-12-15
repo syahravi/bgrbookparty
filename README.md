@@ -1,236 +1,36 @@
-# 📚 Bogor Book Party Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Website komunitas pecinta buku di Bogor yang dibangun dengan Next.js 16, TypeScript, Tailwind CSS, dan Baserow.
+## Getting Started
 
-## 🎨 Features
+First, run the development server:
 
-### Halaman Visitor (Public)
-- ✅ **Landing Page** - Hero section dengan statistik dan preview event
-- ✅ **Link Bio** - Custom Linktree untuk social media
-- ✅ **Jadwal Event** - Daftar event dengan filter dan status
-- ✅ **Katalog Buku** - Grid buku rekomendasi dengan search & filter
-- ✅ **Form Pendaftaran Member** - Form dengan validasi lengkap
-- ✅ **About Us** - Sejarah, visi misi, tim, dan gallery
-
-### Sistem Admin
-- ✅ **Login Admin** - Authentication system
-- ✅ **Dashboard Admin** - Edit mode toggle untuk live editing
-- ✅ **CRUD Management**:
-  - Hero Section
-  - About Section
-  - Events
-  - Books Catalog
-  - Social Links
-  - Member List
-
-### Design & UX
-- 🎨 Color system optimized untuk readability (WCAG AAA compliant)
-- 🌿 Tema hijau pastel sesuai logo BBP (#053923)
-- ⚡ Animasi smooth dengan Framer Motion
-- 📱 Responsive design (mobile-first)
-- 🎯 Custom scrollbar dan smooth scroll
-- ✨ Toast notifications
-- 📖 Typography yang readable (Inter + Playfair Display)
-
-## 🛠 Tech Stack
-
-- **Framework**: Next.js 16 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS 4
-- **Database**: Baserow (No-code Database)
-- **Form Validation**: React Hook Form + Zod
-- **Animations**: Framer Motion
-- **Icons**: Lucide React
-- **Notifications**: React Hot Toast
-
-## 📦 Installation
-
-1. **Clone repository**
-```bash
-git clone <repository-url>
-cd next
-```
-
-2. **Install dependencies**
-```bash
-npm install
-```
-
-3. **Setup environment variables**
-```bash
-cp .env.example .env.local
-```
-
-Edit `.env.local` dan isi dengan credentials Baserow Anda:
-```env
-BASEROW_API_TOKEN=your_baserow_api_token
-NEXT_PUBLIC_BASEROW_API_URL=https://api.baserow.io
-NEXT_PUBLIC_BASEROW_STATS_TABLE_ID=your_stats_table_id
-NEXT_PUBLIC_BASEROW_EVENTS_TABLE_ID=your_events_table_id
-NEXT_PUBLIC_BASEROW_TESTIMONIALS_TABLE_ID=your_testimonials_table_id
-```
-
-4. **Setup Baserow Database**
-
-Lihat panduan lengkap di [BASEROW_STRUCTURE.md](BASEROW_STRUCTURE.md):
-- Import 3 file JSON ke Baserow
-- Dapatkan API Token dan Table IDs
-- Isi environment variables
-
-5. **Add Logo (Optional)**
-
-Logo component sudah terintegrasi dengan fallback otomatis. Untuk menambahkan logo BBP:
-- Export logo dalam 2 versi: `logo.png` (hijau) dan `logo-white.png` (putih)
-- Simpan ke folder `public/`
-- Lihat panduan lengkap di [HOW_TO_ADD_LOGO.md](HOW_TO_ADD_LOGO.md)
-
-6. **Run development server**
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Buka [http://localhost:3000](http://localhost:3000)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 🗄 Database Schema
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Baserow Tables
-- `homepage_stats` - Statistik homepage (active members, events held, etc)
-- `upcoming_events` - Event komunitas
-- `testimonials` - Testimoni member
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Lihat detail struktur dan cara import di [BASEROW_STRUCTURE.md](BASEROW_STRUCTURE.md)
+## Learn More
 
-## 🔐 Admin Access
+To learn more about Next.js, take a look at the following resources:
 
-**Default Credentials:**
-- Username: `admin`
-- Password: `admin123`
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-**Admin URL:** [http://localhost:3000/admin/login](http://localhost:3000/admin/login)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-⚠️ **PENTING**: Ganti password default di production!
+## Deploy on Vercel
 
-## 📁 Project Structure
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-```
-next/
-├── app/
-│   ├── page.tsx                 # Landing page
-│   ├── events/                  # Events page
-│   ├── books/                   # Books catalog
-│   ├── links/                   # Link bio
-│   ├── register/                # Member registration
-│   ├── about/                   # About us
-│   └── admin/
-│       ├── login/              # Admin login
-│       └── dashboard/          # Admin dashboard
-├── components/
-│   ├── layout/                 # Header, Footer
-│   └── ui/                     # Button, Input, Textarea
-├── lib/
-│   ├── baserow.ts             # Baserow API client
-│   ├── auth.ts                # Auth utilities
-│   └── utils.ts               # Helper functions
-├── types/
-│   └── baserow.ts             # TypeScript types
-└── public/                     # Static assets
-```
-
-## 🎯 Key Features Explained
-
-### 1. Color System
-Tema pastel hijau yang cozy dan modern:
-- Primary: `#A8D5BA` (hijau pastel)
-- Secondary: `#D4EBE0` (hijau sangat muda)
-- Accent: `#053923` (hijau tua)
-- Background: `#F5FBF8` (putih kehijauan)
-
-### 2. Typography
-- Body: Inter (clean, modern)
-- Display/Heading: Playfair Display (elegant, serif)
-
-### 3. Admin Dashboard
-- **Edit Mode Toggle**: Aktifkan untuk mengedit konten
-- **Live Preview**: Lihat perubahan real-time
-- **CRUD Operations**: Tambah, edit, hapus data
-- **Toast Notifications**: Feedback untuk setiap aksi
-
-### 4. Form Validation
-Menggunakan Zod schema untuk validasi:
-- Nama: min 3 karakter
-- Email: format valid
-- WhatsApp: 10-15 digit angka
-- Alasan: min 20 karakter
-
-### 5. Responsive Design
-Breakpoints:
-- Mobile: < 768px
-- Tablet: 768px - 1024px
-- Desktop: > 1024px
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-1. Push code ke GitHub
-2. Import project di Vercel
-3. Set environment variables
-4. Deploy!
-
-### Manual Build
-```bash
-npm run build
-npm run start
-```
-
-## 🔧 Development
-
-### Run dev server
-```bash
-npm run dev
-```
-
-### Build for production
-```bash
-npm run build
-```
-
-### Run linter
-```bash
-npm run lint
-```
-
-## 📝 TODO / Future Enhancements
-
-- [ ] Books catalog dengan Baserow
-- [ ] Member registration dengan Baserow
-- [ ] Admin dashboard untuk manage Baserow data
-- [ ] Image upload untuk book covers dan gallery
-- [ ] Email notifications untuk member baru
-- [ ] Export member data ke CSV/Excel
-- [ ] Analytics dashboard untuk admin
-- [ ] Multi-language support (ID/EN)
-- [ ] Dark mode toggle
-- [ ] PWA support
-- [ ] Event registration system
-- [ ] Payment integration untuk paid events
-
-## 🤝 Contributing
-
-Kontribusi sangat diterima! Silakan:
-1. Fork repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🙏 Credits
-
-Dibuat dengan ❤️ untuk Bogor Book Party
-
----
-
-**Happy Reading! 📖**
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

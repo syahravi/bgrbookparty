@@ -1,4 +1,0 @@
-# CSP sudah allow Baserow API
-Content-Security-Policy = """
-  connect-src 'self' https://api.baserow.io;
-"""
