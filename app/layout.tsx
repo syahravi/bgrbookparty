@@ -21,6 +21,14 @@ export const metadata: Metadata = {
   title: "Bogor Book Party - Komunitas Literasi Bogor | Membaca Bersama Setiap Minggu",
   description: "Bergabunglah dengan komunitas literasi terbesar di Bogor. Silent reading, diskusi buku, dan kegiatan seru setiap Minggu di Taman Heulang. Kami hadir bukan sekadar sebagai teman baca, tapi untuk merawat rasa, menghidupkan literasi di Kota Bogor.",
   keywords: "bogor book party, komunitas baca bogor, literasi bogor, perpustakaan bogor, diskusi buku, silent reading, Taman Heulang",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "Bogor Book Party - Komunitas Literasi Bogor",
     description: "Bergabunglah dengan komunitas literasi terbesar di Bogor. Silent reading, diskusi buku, dan kegiatan seru setiap Minggu.",

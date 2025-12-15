@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
     const quickLinks = [
@@ -23,8 +24,14 @@ const Footer = () => {
                     {/* Brand Column */}
                     <div className="lg:col-span-1">
                         <div className="flex items-center gap-3 mb-6">
-                            <div className="w-14 h-14 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center">
-                                <span className="text-2xl">📚</span>
+                            <div className="w-14 h-14 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center overflow-hidden">
+                                <Image
+                                    src="/logo.png"
+                                    alt="Bogor Book Party Logo"
+                                    width={56}
+                                    height={56}
+                                    className="object-contain"
+                                />
                             </div>
                             <div>
                                 <h3 className="text-xl font-bold">Bogor Book Party</h3>

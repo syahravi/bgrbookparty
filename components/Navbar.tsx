@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
@@ -51,11 +52,14 @@ const Navbar = () => {
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 group">
-                        <div className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${useDarkText
-                            ? "bg-gradient-to-br from-[#1B5E3F] to-[#2E7D5A]"
-                            : "bg-white/20 backdrop-blur-sm"
-                            }`}>
-                            <span className="text-xl">📚</span>
+                        <div className="w-12 h-12 rounded-full overflow-hidden flex items-center justify-center transition-all duration-300">
+                            <Image
+                                src="/logo.png"
+                                alt="Bogor Book Party Logo"
+                                width={48}
+                                height={48}
+                                className="object-contain"
+                            />
                         </div>
                         <div className="flex flex-col">
                             <span className={`text-lg font-bold tracking-tight transition-colors duration-300 ${useDarkText ? "text-[#1B5E3F]" : "text-white"
