@@ -24,7 +24,7 @@ const WhatsAppButton = () => {
 
             {/* WhatsApp Button */}
             <a
-                href="https://wa.me/6285111040891?text=Halo%20Bogor%20Book%20Party!%20Saya%20ingin%20bertanya%20tentang%20kegiatan%20BBP."
+                href="https://wa.me/6288905683079?text=Halo%20Bogor%20Book%20Party!%20Saya%20ingin%20bertanya%20tentang%20kegiatan%20BBP."
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={() => setIsHovered(true)}

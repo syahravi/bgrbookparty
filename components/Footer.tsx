@@ -124,8 +124,8 @@ const Footer = () => {
                                 </div>
                                 <div>
                                     <p className="text-sm text-white/60">Minbuk BBP</p>
-                                    <a href="https://wa.me/6285111040891" className="text-white hover:text-[#25D366] transition-colors">
-                                        +62 851-1104-0891
+                                    <a href="https://wa.me/6288905683079" className="text-white hover:text-[#25D366] transition-colors">
+                                        +62 889-0568-3079
                                     </a>
                                 </div>
                             </li>
