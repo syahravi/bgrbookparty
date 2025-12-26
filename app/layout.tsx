@@ -19,7 +19,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Bogor Book Party - Komunitas Literasi Bogor | Membaca Bersama Setiap Minggu",
-  description: "Bergabunglah dengan komunitas literasi terbesar di Bogor. Silent reading, diskusi buku, dan kegiatan seru setiap Minggu di Taman Heulang. Kami hadir bukan sekadar sebagai teman baca, tapi untuk merawat rasa, menghidupkan literasi di Kota Bogor.",
+  description: "Bergabunglah dengan komunitas literasi di Bogor. Silent reading, diskusi buku, dan kegiatan seru setiap Minggu di Taman Heulang. Kami hadir bukan sekadar sebagai teman baca, tapi untuk merawat rasa, menghidupkan literasi di Kota Bogor.",
   keywords: "bogor book party, komunitas baca bogor, literasi bogor, perpustakaan bogor, diskusi buku, silent reading, Taman Heulang",
   icons: {
     icon: [
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Bogor Book Party - Komunitas Literasi Bogor",
-    description: "Bergabunglah dengan komunitas literasi terbesar di Bogor. Silent reading, diskusi buku, dan kegiatan seru setiap Minggu.",
+    description: "Bergabunglah dengan komunitas literasi di Bogor. Silent reading, diskusi buku, dan kegiatan seru setiap Minggu.",
     type: "website",
     locale: "id_ID",
   },
   twitter: {
     card: "summary_large_image",
     title: "Bogor Book Party - Komunitas Literasi Bogor",
-    description: "Bergabunglah dengan komunitas literasi terbesar di Bogor.",
+    description: "Bergabunglah dengan komunitas literasi di Bogor.",
   },
 };
 
